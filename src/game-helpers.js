@@ -3,6 +3,8 @@
  * solving algorithm!
  */
 
+import { check } from "prettier";
+
 export function checkGuess(guess, answer) {
   // This constant is a placeholder that indicates we've successfully
   // dealt with this character (it's correct, or misplaced).
@@ -53,3 +55,5 @@ export function checkGuess(guess, answer) {
 
   return result;
 }
+
+export default checkGuess;
