@@ -1,7 +1,7 @@
 import React from 'react';
 import checkGuess from '../../game-helpers.js';
 
-function GuessInput({pastGuesses, setPastGuesses, answer, setBannerMsg, setBannerClass}) {
+function GuessInput({pastGuesses, setPastGuesses, answer, setBannerMsg, setBannerClass, bannerClass}) {
   const [guessedWord, setGuessedWord] = React.useState('');
 
   function handleSubmit(event) {
@@ -37,6 +37,7 @@ function GuessInput({pastGuesses, setPastGuesses, answer, setBannerMsg, setBanne
         setGuessedWord(event.target.value.toUpperCase());
        }}
        value={guessedWord}
+       disabled={bannerClass != ''}
       ></input>
     </form>
   </>;

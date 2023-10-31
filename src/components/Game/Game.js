@@ -19,7 +19,7 @@ function Game() {
 
   return <>
     <GuessGrid guesses={pastGuesses}></GuessGrid>
-    <GuessInput setPastGuesses={setPastGuesses} pastGuesses={pastGuesses} answer={answer} setBannerMsg={setBannerMsg} setBannerClass={setBannerClass}></GuessInput>
+    <GuessInput setPastGuesses={setPastGuesses} pastGuesses={pastGuesses} answer={answer} setBannerMsg={setBannerMsg} setBannerClass={setBannerClass} bannerClass={bannerClass}></GuessInput>
 
     <div className={bannerClass}>
       <p>{bannerMsg}</p>
